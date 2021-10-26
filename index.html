@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!--
+  In this file:
+  - You CAN edit the <body> structure and contents.
+  - You CAN change the current tags and their order inside the <body>.
+  - You CAN add new tags, ids and classes or wrap the existing ones inside the <body>.
+  BUT:
+  - You CANNOT edit the <head>.
+  - You CANNOT add additional external references (libraries, frameworks, etc.), this is going to be automatically tested.
+  - You CANNOT add javascript code or additional stylesheets. The test only copies your index.html and style.css files.
+  - You CANNOT remove template tags (variables between {}). The test may change the content of these.
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magnet Frontend Test</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;800&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" />
+    <script src="site.js"></script>
+  </head>
+
+  <body>
+    <!--header-->
+
+    <header class="header">
+
+      <div class="contenedor contenedor-header">
+
+        <div class="principal">
+
+          <div class="header__imagen">
+      
+            <img class="header__imagen-dog" src="img/logo.png">
+            <h1 class="header__texto">Dogos</h1>
+
+          </div>
+
+          
+
+          <nav class="navegacion">
+            <div class="navegacion__enlaces">{navlinks} </div> 
+
+          </nav>
+
+        </div>
+
+      </div>
+
+    
+    </header>
+
+
+    <div class="contenedor" >
+
+      <div class="titulo__texto">
+
+        <h1>{title}</h1>
+
+      </div>
+
+      <main class="contenido-principal">
+
+
+      
+        <article class="entrada">
+
+          <div class="entrada-contenido">
+
+           {content1}
+          </div>
+
+          <div class="prueba">
+            <a class="boton boton-primario" href="#"><img src="img/paw.png">Learn more</a>
+          </div>
+
+         
+        </article>
+
+
+        <article class="entrada">
+
+          <div class="entrada-contenido">
+
+           {content2}
+          </div>
+
+          <div class="prueba">
+            <a class="boton boton-primario" href="#"><img src="img/paw.png">Learn more</a>
+          </div>
+
+
+        </article>
+
+
+        <article class="entrada">
+
+          <div class="entrada-contenido">
+
+           {content3}
+          </div>
+
+
+          <div class="prueba">
+            <a class="boton boton-primario" href="#"><img src="img/paw.png">Learn more</a>
+          </div>
+
+
+        </article>
+        
+        
+
+
+      </main>
+
+
+    </div>
+
+    
+
+   
+  </body>
+</html>
